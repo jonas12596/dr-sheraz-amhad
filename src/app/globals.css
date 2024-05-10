@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .dark-blue {
+    color: var(--darkBlue);
+  }
+
+  .main-blue {
+    color: var(--mainBlue);
+  }
+
+  .bg-dark-blue {
+    background-color: var(--darkBlue);
+  }
+
+  .border-dark-blue {
+    border-color: var(--darkBlue);
+  }
+  
+  .bg-main-blue {
+    background-color: var(--mainBlue);
+  }
+
+  .border-main-blue {
+    border-color: var(--mainBlue);
+  }
+
+  .primary-font {
+    font-family: var(--primaryFont);
+  }
+}
+
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+
+  --mainBlue: #55a0fc;
+  --darkBlue: #0d2253;
+  --primaryFont: "Open Sans", sans-serif;
+}
+
+html,
+body,
+.site-container {
+  width: 100%;
+  height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
