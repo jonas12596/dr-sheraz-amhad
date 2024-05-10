@@ -20,13 +20,25 @@
   .border-dark-blue {
     border-color: var(--darkBlue);
   }
-  
+
+  .dark-fill {
+    fill: var(--darkBlue);
+  }
+
+  .stroke-main-blue {
+    stroke: var(--mainBlue);
+  }
+
   .bg-main-blue {
     background-color: var(--mainBlue);
   }
 
   .border-main-blue {
     border-color: var(--mainBlue);
+  }
+
+  .bg-light-blue {
+    background: var(--lightBlue);
   }
 
   .primary-font {
@@ -42,8 +54,13 @@
   text-decoration: none;
 
   --mainBlue: #55a0fc;
+  --lightBlue: #8fc1ff;
   --darkBlue: #0d2253;
   --primaryFont: "Open Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 html,
@@ -56,4 +73,44 @@ body,
 img {
   max-width: 100%;
   object-fit: contain;
+}
+
+.services-section {
+  background: rgb(169, 208, 255);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(169, 208, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(169, 208, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(169, 208, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a9d0ff",endColorstr="#ffffff",GradientType=1);
+}
+
+.icon-container {
+  background: rgb(13, 34, 83);
+  background: -moz-linear-gradient(
+    135deg,
+    rgba(13, 34, 83, 1) 0%,
+    rgba(85, 160, 252, 1) 88%
+  );
+  background: -webkit-linear-gradient(
+    135deg,
+    rgba(13, 34, 83, 1) 0%,
+    rgba(85, 160, 252, 1) 88%
+  );
+  background: linear-gradient(
+    135deg,
+    rgba(13, 34, 83, 1) 0%,
+    rgba(85, 160, 252, 1) 88%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0d2253",endColorstr="#55a0fc",GradientType=1);
 }

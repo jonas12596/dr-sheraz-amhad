@@ -18,7 +18,7 @@ const NavComponent = () => {
   }
   return (
     <>
-      <nav className="w-full flex items-center justify-between">
+      <nav className="w-full px-2 flex items-center justify-between bg-white">
         <Link
           href="/"
           className="primary-font dark-font font-medium text-2xl lg:text-3xl"
@@ -30,7 +30,7 @@ const NavComponent = () => {
             <Link href="/">Services</Link>
           </li>
           <li className="menu-link text-lg dark-font">
-            <Link href="/">Doctor</Link>
+            <Link href="/">Doctors</Link>
           </li>
           <li className="menu-link text-lg dark-font">
             <Link href="/">How it works</Link>
@@ -56,7 +56,7 @@ const NavComponent = () => {
         </div>
         <ul
           ref={mobileNav}
-          className="hidden absolute top-0 bottom-0 right-0 w-full h-full bg-main-blue primary-font font-light items-center justify-center flex-col gap-12 lg:hidden"
+          className="hidden absolute inset-0 w-full h-screen bg-main-blue primary-font font-light items-center justify-center flex-col gap-12 z-[99] lg:hidden"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
